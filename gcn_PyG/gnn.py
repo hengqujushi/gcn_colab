@@ -4,13 +4,14 @@ import torch
 from torch_geometric.datasets import Planetoid
 
 
-# PyG安装命令，此时假定本地安装了torch1.7.1，只有cpu，可以通过 python -c "import torch; print(torch.__version__)"命令查看torch版本，
+# PyG安装命令，此时假定本地安装了torch1.7.0，只有cpu，可以通过 python -c "import torch; print(torch.__version__)"命令查看torch版本，
 # 可以通过python -c "import torch; print(torch.version.cuda)"查看cuda版本
-# pip install torch-scatter -f https://pytorch-geometric.com/whl/torch-1.7.1+cpu.html
-# pip install torch-sparse -f https://pytorch-geometric.com/whl/torch-1.7.1+cpu.html
-# pip install torch-cluster -f https://pytorch-geometric.com/whl/torch-1.7.1+cpu.html
-# pip install torch-spline-conv -f https://pytorch-geometric.com/whl/torch-1.7.1+cpu.html
-# pip install torch-geometric
+# CC=clang pip install  torch==1.7.0
+# CC=clang pip install  torch-scatter -f https://pytorch-geometric.com/whl/torch-1.7.0+cpu.html
+# CC=clang pip install  torch-sparse -f https://pytorch-geometric.com/whl/torch-1.7.0+cpu.html
+# CC=clang pip install  torch-cluster -f https://pytorch-geometric.com/whl/torch-1.7.0+cpu.html
+# CC=clang pip install  torch-spline-conv -f https://pytorch-geometric.com/whl/torch-1.7.0+cpu.html
+# CC=clang pip install  torch-geometric
 
 
 dataset = Planetoid(root='./tmp/Cora', name='Cora')
